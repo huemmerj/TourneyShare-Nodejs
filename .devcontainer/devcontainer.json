@@ -1,0 +1,12 @@
+{
+  "name": "Node.js & TypeScript with MongoDB",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  
+  // Forward MongoDB port if you need to access it from the host
+  "forwardPorts": [27017],
+  
+  // Use 'postCreateCommand' to run commands after the container is created
+  "postCreateCommand": "npm install"
+}p
